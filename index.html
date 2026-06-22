@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivaganka Sivaneswaran | Full-Stack Developer & AI/ML Enthusiast</title>
+    <meta name="description"
+        content="Professional portfolio of Sivaganka Sivaneswaran, an Information Technology undergraduate at SLIIT specializing in MERN Stack, Spring Boot, and AI/ML applications.">
+    <meta name="keywords"
+        content="Sivaganka Sivaneswaran, Full-Stack Developer, MERN Stack, Spring Boot, AI, ML, SLIIT, React Developer, Backend Engineer, Java, Python">
+    <meta name="author" content="Sivaganka Sivaneswaran">
+
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="logo-link">
+                <span class="logo-accent">&lt;</span> Sivaganka<span class="logo-accent"> /&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-navigation">
+                <a href="#hero" class="nav-link active" id="link-hero">Home</a>
+                <a href="#about" class="nav-link" id="link-about">About</a>
+                <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+                <a href="#education" class="nav-link" id="link-education">Education</a>
+                <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline" id="action-hire-btn">Hire Me</a>
+                <button class="mobile-nav-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-overlay" id="mobile-nav-overlay">
+        <nav class="mobile-menu" id="mobile-nav-menu">
+            <a href="#hero" class="mobile-link" id="mob-link-hero">Home</a>
+            <a href="#about" class="mobile-link" id="mob-link-about">About</a>
+            <a href="#skills" class="mobile-link" id="mob-link-skills">Skills</a>
+            <a href="#projects" class="mobile-link" id="mob-link-projects">Projects</a>
+            <a href="#education" class="mobile-link" id="mob-link-education">Education</a>
+            <a href="#contact" class="mobile-link" id="mob-link-contact">Contact</a>
+            <a href="#contact" class="btn btn-primary" id="mob-action-hire">Hire Me</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to my Portfolio</span>
+                    <h1 class="hero-title">
+                        <span class="text-glow">Sivaganka Sivaneswaran</span>
+                    </h1>
+                    <h2 class="hero-typing-wrap">
+                        <span id="typing-text" class="text-gradient"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Information Technology undergraduate at SLIIT specializing in full-stack development, backend
+                        engineering, and AI-integrated applications.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">View My Work <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="mailto:sivaganka1012@gmail.com" class="btn btn-outline" id="hero-cv-btn">Download CV <i
+                                class="fa-solid fa-download"></i></a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect with me:</span>
+                        <a href="https://github.com/sivaganka1012" target="_blank" class="social-icon"
+                            id="hero-github-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sivaganka-sivaneswaran-a85653402" target="_blank"
+                            class="social-icon" id="hero-linkedin-link" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:sivaganka1012@gmail.com" class="social-icon" id="hero-email-link"
+                            aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+94741796374" class="social-icon" id="hero-phone-link" aria-label="Phone"><i
+                                class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="glass-card visual-card">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-title">sivaganka.json</span>
+                        </div>
+                        <pre class="code-snippet"><code><span class="key">"name"</span>: <span class="val">"Sivaganka Sivaneswaran"</span>,
+<span class="key">"education"</span>: <span class="val">"BSc (Hons) in IT @ SLIIT"</span>,
+<span class="key">"specialization"</span>: <span class="val">"Full-Stack & AI/ML"</span>,
+<span class="key">"skills"</span>: [
+  <span class="val">"MERN Stack"</span>,
+  <span class="val">"Spring Boot"</span>,
+  <span class="val">"React Native"</span>,
+  <span class="val">"Deep Learning"</span>
+],
+<span class="key">"status"</span>: <span class="val">"Building scalable apps..."</span></code></pre>
+                    </div>
+                    <div class="floating-tech-badge badge-1"><i class="fa-brands fa-react"></i> React</div>
+                    <div class="floating-tech-badge badge-2"><i class="fa-brands fa-envira"></i> MongoDB</div>
+                    <div class="floating-tech-badge badge-3"><i class="fa-brands fa-java"></i> Spring</div>
+                    <div class="floating-tech-badge badge-4"><i class="fa-brands fa-python"></i> PyTorch</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-tag">Profile</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3 class="about-greet">Aspiring Full-Stack & AI Engineer</h3>
+                        <p class="about-text">
+                            I am a passionate Information Technology undergraduate at the Sri Lanka Institute of
+                            Information Technology (SLIIT) specializing in full-stack development, backend engineering,
+                            and AI-integrated applications.
+                        </p>
+                        <p class="about-text">
+                            I have built robust systems using the MERN stack and Spring Boot, applying clean
+                            architecture, model-view-controller (MVC) structures, secure JWT authentication, and
+                            optimized REST APIs. My interests also span deep learning classifiers, where I build
+                            assistive AI tools and data preprocessing pipelines.
+                        </p>
+
+                        <div class="personal-details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value"> Jaffna,Sri Lanka</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value"><a
+                                        href="mailto:sivaganka1012@gmail.com">sivaganka1012@gmail.com</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Phone</span>
+                                <span class="detail-value"><a href="tel:+94741796374">+94 74 179 6374</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Languages</span>
+                                <span class="detail-value">English, Tamil, Sinhala </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Reference Column -->
+                    <div class="about-reference">
+                        <div class="glass-card reference-card">
+                            <div class="ref-quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                            <h4 class="ref-heading">Academic Reference</h4>
+                            <div class="ref-author">
+                                <div class="ref-avatar"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="ref-meta">
+                                    <span class="ref-name">K. Thiruthanigesan</span>
+                                    <span class="ref-title">Senior Lecturer</span>
+                                    <span class="ref-degree">B.Sc, M.Sc. Comp Sci, PhD (Pera-Reading)</span>
+                                    <span class="ref-inst">SLIIT, Northern Uni.</span>
+                                </div>
+                            </div>
+                            <p class="ref-desc">
+                                Member of Sri Lanka Young Scientists Forum (NASTEC).
+                            </p>
+                            <div class="ref-contacts">
+                                <a href="mailto:thiruthanigesan.k@sliit.lk" class="ref-contact-link"><i
+                                        class="fa-solid fa-envelope"></i> thiruthanigesan.k@sliit.lk</a>
+                                <a href="tel:+94779902255" class="ref-contact-link"><i class="fa-solid fa-phone"></i>
+                                    +94 77 990 2255</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical & Core Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-tag">Competencies</span>
+                    <h2 class="section-title">My Skillset</h2>
+                </div>
+
+                <div class="skills-categories-grid">
+                    <!-- Languages -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>Java</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>JavaScript</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>Python</span><span class="skill-tag">Intermediate</span></li>
+                            <li><span>TypeScript</span><span class="skill-tag">Intermediate</span></li>
+                            <li><span>C</span><span class="skill-tag">Basic</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Frameworks & Tech -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <h3>Frameworks & Tech</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>Spring Boot</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>React.js</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>React Native</span><span class="skill-tag">Intermediate</span></li>
+                            <li><span>Node.js / Express.js</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>RESTful APIs</span><span class="skill-tag">Advanced</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-icon-wrap">
+                            <div class="skill-category-header">
+                                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                                <h3>Databases</h3>
+                            </div>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>MySQL (SQL)</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>MongoDB (NoSQL)</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>Database Design</span><span class="skill-tag">Advanced</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Machine Learning & AI -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                            <h3>Machine Learning & AI</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>Python (Jupyter Notebook)</span><span class="skill-tag">Intermediate</span></li>
+                            <li><span>NumPy & Pandas</span><span class="skill-tag">Intermediate</span></li>
+                            <li><span>CNN (EfficientNetB0)</span><span class="skill-tag">Intermediate</span></li>
+                            <li><span>Grad-CAM (Explainable AI)</span><span class="skill-tag">Intermediate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools & IoT -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <h3>Tools & IoT</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>JWT Authentication</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>Git & GitHub</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>Postman</span><span class="skill-tag">Advanced</span></li>
+                            <li><span>ESP32 & Sensors</span><span class="skill-tag">Intermediate</span></li>
+                            <li><span>Ubuntu (Linux Basics)</span><span class="skill-tag">Basic</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-icon"><i class="fa-solid fa-users"></i></div>
+                            <h3>Core & Soft Skills</h3>
+                        </div>
+                        <div class="soft-skills-badges">
+                            <span class="badge">OOP & MVC</span>
+                            <span class="badge">Agile / Scrum</span>
+                            <span class="badge">Problem Solving</span>
+                            <span class="badge">Team Collaboration</span>
+                            <span class="badge">Learning Agility</span>
+                            <span class="badge">Adaptability</span>
+                            <span class="badge">Technical Communication</span>
+                            <span class="badge">Time Management</span>
+                            <span class="badge">Software Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <!-- Search & Filters Container -->
+                <div class="projects-filter-bar">
+                    <div class="search-input-wrap">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="project-search" placeholder="Search projects by tech stack or name...">
+                    </div>
+                    <div class="filter-buttons" id="project-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="spring-boot">Spring Boot / Java</button>
+                        <button class="filter-btn" data-filter="mern">MERN Stack</button>
+                        <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-container">
+                    <!-- Project 1: AI-Powered Automobile Marketplace -->
+                    <div class="glass-card project-card" data-categories="mern, web"
+                        data-title="AI-Powered Automobile Marketplace"
+                        data-tech="mongodb, express, react, node, typescript, rest-api, github">
+                        <div class="project-header">
+                            <span class="project-year">2026</span>
+                            <div class="project-links">
+                                <a href="https://github.com/sivaganka1012" target="_blank"
+                                    aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">AI-Powered Automobile Marketplace</h3>
+                            <p class="project-card-desc">A full-stack web marketplace with specialized dashboards and
+                                role-based structures for Buyers, Sellers, Mechanics, and Admins.</p>
+                            <ul class="project-highlights">
+                                <li>Built a full-stack MERN marketplace with role-based access control and secure JWT
+                                    authentication.</li>
+                                <li>Designed product management, Order System, and Seller Dashboard with dynamic pricing
+                                    and order tracking.</li>
+                                <li>Constructed REST APIs and a Rating & Review System using MongoDB, Express.js,
+                                    React.js, and Node.js.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>TypeScript</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AI-Powered Automobile Marketplace - Mobile App -->
+                    <div class="glass-card project-card" data-categories="mern, mobile"
+                        data-title="AI-Powered Automobile Marketplace - Mobile App"
+                        data-tech="react-native, mongodb, express, node, typescript, jwt, rest-api, github">
+                        <div class="project-header">
+                            <span class="project-year">2026</span>
+                            <div class="project-links">
+                                <a href="https://github.com/sivaganka1012" target="_blank"
+                                    aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">AI-Powered Automobile Marketplace – Mobile App</h3>
+                            <p class="project-card-desc">Cross-platform mobile application corresponding to the
+                                Automobile Marketplace, tailored for seamless mobile commerce.</p>
+                            <ul class="project-highlights">
+                                <li>Built a full-stack mobile app using React Native, Node.js, and MongoDB with JWT
+                                    authentication and role-based access.</li>
+                                <li>Built product management, Order System, and Seller Dashboard with RESTful API
+                                    integration and real-time mobile UI.</li>
+                                <li>Deployed backend on a live platform with a Rating & Review System for full
+                                    mobile-to-API connectivity.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span>React Native</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>TypeScript</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Multimodal AI System for Visually Impaired -->
+                    <div class="glass-card project-card" data-categories="ai-ml, spring-boot"
+                        data-title="Multimodal AI System for Visually Impaired"
+                        data-tech="python, opencv, numpy, deep-learning, voice-processing, spring-boot, mysql">
+                        <div class="project-header">
+                            <span class="project-year">2025</span>
+                            <div class="project-links">
+                                <a href="https://github.com/sivaganka1012" target="_blank"
+                                    aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">Multimodal AI System for Visually Impaired</h3>
+                            <p class="project-card-desc">An AI-powered assistive system delivering real-time object
+                                detection and environmental awareness with audio feedback.</p>
+                            <ul class="project-highlights">
+                                <li>Built an AI-powered assistive system using OpenCV and Deep Learning for real-time
+                                    object detection and environmental awareness.</li>
+                                <li>Developed a data preprocessing pipeline on the COCO dataset covering data cleaning,
+                                    annotation validation, and class imbalance handling.</li>
+                                <li>Incorporated a voice interaction module to deliver instant audio feedback, enhancing
+                                    accessibility.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Deep Learning</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Online Examination and Result Management System -->
+                    <div class="glass-card project-card" data-categories="spring-boot"
+                        data-title="Online Examination and Result Management System"
+                        data-tech="java, spring-boot, jsp, html, css, bootstrap, file-handling, github">
+                        <div class="project-header">
+                            <span class="project-year">Recent</span>
+                            <div class="project-links">
+                                <a href="https://github.com/sivaganka1012" target="_blank"
+                                    aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">Online Examination & Result Management System</h3>
+                            <p class="project-card-desc">A full-stack examination engine using core DSA structures and
+                                custom file handling instead of a database engine.</p>
+                            <ul class="project-highlights">
+                                <li>Built a full-stack exam system using Spring Boot and Java with modules for user
+                                    management, exam creation, and automated result processing.</li>
+                                <li>Applied Linked List and Selection Sort (DSA) for student records and ranking, using
+                                    a custom file handling layer instead of a database.</li>
+                                <li>Designed a responsive UI with JSP, HTML5, CSS3, and Bootstrap for student and admin
+                                    use.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>JSP</span>
+                            <span>DSA</span>
+                            <span>File Handling</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Blood Donation Management System -->
+                    <div class="glass-card project-card" data-categories="spring-boot"
+                        data-title="Blood Donation Management System"
+                        data-tech="java, jsp, servlets, mysql, maven, apache-tomcat">
+                        <div class="project-header">
+                            <span class="project-year">Recent</span>
+                            <div class="project-links">
+                                <a href="https://github.com/sivaganka1012" target="_blank"
+                                    aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-card-title">Blood Donation Management System</h3>
+                            <p class="project-card-desc">Role-based web portal for clinical workflow, donor scheduling,
+                                inventory control, and notifications.</p>
+                            <ul class="project-highlights">
+                                <li>Built a full-stack web app using Java, JSP, Servlets, and MySQL with role-based
+                                    access for 6 user roles and secure authentication.</li>
+                                <li>Implemented modules for appointment scheduling, donor eligibility tracking, and
+                                    blood inventory management with dashboards and reporting.</li>
+                                <li>Configured email/SMS notifications for real-time donor alerts and updates.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span>Java Servlet</span>
+                            <span>JSP</span>
+                            <span>MySQL</span>
+                            <span>Maven</span>
+                            <span>Tomcat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="education-grid-wrapper">
+                    <!-- Left: Education -->
+                    <div class="education-col">
+                        <div class="section-title-wrap">
+                            <span class="section-tag">Learning Journey</span>
+                            <h2 class="section-title">Academic Background</h2>
+                        </div>
+
+                        <div class="timeline">
+                            <!-- Education item 1 -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2024 - Present</div>
+                                <div class="glass-card timeline-content">
+                                    <h3>BSc (Hons) in Information Technology</h3>
+                                    <h4>Sri Lanka Institute of Information Technology (SLIIT)</h4>
+                                    <p class="subtitle">Faculty of Computing | Specialisation: Information Technology
+                                    </p>
+                                    <p>OOP, Data Strucures, DBMS, Web Technologies, Software Engineering, AI & ML</p>
+                                </div>
+                            </div>
+
+                            <!-- Education item 2 -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Completed 2021</div>
+                                <div class="glass-card timeline-content">
+                                    <h3>G.C.E Advanced Level (A/L)</h3>
+                                    <h4>MU/Mallavi Central College</h4>
+                                    <p class="subtitle">Humanities Stream</p>
+                                </div>
+                            </div>
+
+                            <!-- Education item 3 -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Completed 2017</div>
+                                <div class="glass-card timeline-content">
+                                    <h3>G.C.E Ordinary Level (O/L)</h3>
+                                    <h4>MU/Mallavi Central College</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Certifications -->
+                    <div class="certifications-col">
+                        <div class="section-title-wrap">
+                            <span class="section-tag">Credentials</span>
+                            <h2 class="section-title">Certifications</h2>
+                        </div>
+
+                        <div class="certs-grid">
+                            <!-- Cert 1 -->
+                            <div class="glass-card cert-card">
+                                <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                                <div class="cert-info">
+                                    <h3>Python for Beginners</h3>
+                                    <p>University of Moratuwa</p>
+                                    <span class="cert-date"> Sep 2024</span>
+                                    <a href="#" class="cert-verify-link">Verify Certificate <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- Cert 2 -->
+                            <div class="glass-card cert-card">
+                                <div class="cert-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div class="cert-info">
+                                    <h3>Web Design for Beginners</h3>
+                                    <p>University of Moratuwa</p>
+                                    <span class="cert-date">Sep 2024</span>
+                                    <a href="#" class="cert-verify-link">Verify Certificate <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- Cert 3 -->
+                            <div class="glass-card cert-card">
+                                <div class="cert-icon"><i class="fa-solid fa-file-excel"></i></div>
+                                <div class="cert-info">
+                                    <h3>Microsoft Office</h3>
+                                    <p>COEL</p>
+                                    <span class="cert-date">Dec 2024</span>
+                                </div>
+                            </div>
+
+                            <!-- Cert 4 -->
+                            <div class="glass-card cert-card">
+                                <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+                                <div class="cert-info">
+                                    <h3>Computer Hardware</h3>
+                                    <p>COEL</p>
+                                    <span class="cert-date">Sep 2024</span>
+                                </div>
+                            </div>
+
+                            <!-- Cert 5 -->
+                            <div class="glass-card cert-card">
+                                <div class="cert-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                <div class="cert-info">
+                                    <h3>AI Research Exhibition</h3>
+                                    <p>Think AI Expo 2025 – SLIIT</p>
+                                    <span class="cert-date">Dec 2025</span>
+                                </div>
+                            </div>
+
+                            <!-- Cert 6 -->
+                            <div class="glass-card cert-card">
+                                <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="cert-info">
+                                    <h3>AI Master Class</h3>
+                                    <p>LB Camps</p>
+                                    <span class="cert-date">Dec 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Contact Me</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-panel">
+                        <div class="glass-card info-card">
+                            <h3>Let's discuss a project or opportunity!</h3>
+                            <p>I'm open to internship roles, freelance projects, or collaboration on backend engineering
+                                and AI tasks.</p>
+
+                            <div class="contact-links-list">
+                                <div class="contact-link-item">
+                                    <div class="contact-circle-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="contact-details">
+                                        <span>Email Me</span>
+                                        <a href="mailto:sivaganka1012@gmail.com">sivaganka1012@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-link-item">
+                                    <div class="contact-circle-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="contact-details">
+                                        <span>Call Me</span>
+                                        <a href="tel:+94741796374">+94 74 179 6374</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-link-item">
+                                    <div class="contact-circle-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                    <div class="contact-details">
+                                        <span>Based In</span>
+                                        <span>Jaffna, Sri Lanka</span>
+                                    </div>
+                                </div>
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/sivaganka-sivaneswaran-a85653402/" target="_blank"
+                                    class="contact-link-item">
+                                    <div class="contact-circle-icon">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span>LinkedIn</span>
+                                    </div>
+                                </a>
+                                <!-- GitHub -->
+                                <a href="https://github.com/sivaganka1012" target="_blank" class="contact-link-item">
+                                    <div class="contact-circle-icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span>GitHub</span>
+                                    </div>
+                                </a>
+                                <!-- Download CV -->
+                                <a href="./Sivaganka_Sivaneswaren_CV..pdf" download class="contact-link-item">
+                                    <div class="contact-circle-icon">
+                                        <i class="fa-solid fa-file-arrow-down"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span>Download CV</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-panel">
+                        <div class="glass-card form-card">
+                            <form id="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="form-name">Name</label>
+                                        <input type="text" id="form-name" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-email">Email Address</label>
+                                        <input type="email" id="form-email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-subject">Subject</label>
+                                    <input type="text" id="form-subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-message">Message</label>
+                                    <textarea id="form-message" rows="5" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                    Send Message <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                                <div id="form-status-message" class="form-status"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">&lt;Sivaganka /&gt;</a>
+                <p>Full-Stack Developer | UI/UX Engineering | AI / ML Enthusiast | </p>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-socials">
+                    <a href="https://github.com/sivaganka1012" target="_blank" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sivaganka-sivaneswaran-a85653402" target="_blank"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:sivaganka1012@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026 Sivaganka Sivaneswaran. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Interaction Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
